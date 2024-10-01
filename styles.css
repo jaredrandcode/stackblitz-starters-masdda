@@ -5,8 +5,8 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+  color: rgba(114, 21, 114, 0.685);
+  background-color: pink;
 }
 
 nav {
