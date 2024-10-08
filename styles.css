@@ -63,3 +63,8 @@ p {
 #three { 
   background-color: rgb(56, 128, 190);
 }
+#FlexBoxImage {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
