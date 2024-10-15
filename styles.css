@@ -54,15 +54,6 @@ p {
   flex-direction: row;
   justify-content: space-between;
 }
-#one { 
-  background-color: rgb(56, 128, 190);
-}
-#two { 
-  background-color: rgb(56, 128, 190);
-}
-#three { 
-  background-color: rgb(56, 128, 190);
-}
 #FlexBoxImage {
   display: flex;
   justify-content: center;
