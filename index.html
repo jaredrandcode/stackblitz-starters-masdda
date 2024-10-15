@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>volleyball</title>
-    <!-- <meta name="descrition"> A store to sell trade and buy volleyball gear and merch. </meta> -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <link rel="icon"
-href="/images/favicon.ico"> 
-  <body>
+<head>
+  <title>Volleyball</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+  <link rel="icon" href="/images/favicon.ico">
+  <style>
+    /* Flexbox styling for image alignment */
+    .HomePageStyle {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
 
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-      <div class="HomePageStyle"> 
-        <div id="one">
-          hahahha
-        </div>
-        <div id="two"> 
-          hahahha 
-        </div>
-        <div id="three"> because
-           </div>
+    /* Styling for individual div containers */
+    #one, #two, #three {
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 15px;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image styling for rounded corners and padding */
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Optional styling for linked image */
+    a img {
+      border: 2px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" aria-current="page">Home</a>
+    <a href="/page2.html">Other page</a>
+  </nav>
+
+  <main>
+    <h1>Home page</h1>
+
+    <div class="HomePageStyle"> 
+      <!-- First image with link -->
+      <div id="one">
+        <a href="https://www.volleyball.com" target="_blank">
+          <img src="volleyball_image1.jpg" alt="Volleyball Game" />
+        </a>
       </div>
-      <h1>Heading level 1</h1>
-      <p> This store is strictly for voleyball items whether they are new or used </p>
-    
-        <h2> Heading level 2</h2>
-        <h3> Heading level 3</h3>
-        <h4> Heading level 4</h4>
-        <h5> Heading level 5</h5>
-        <h6> Heading level 6</h6>
-        <p> PARAGRAPH </p>
 
-    </main>
-  </body>
-</html>
+      <!-- Second image -->
+      <div id="two"> 
+        <img src="volleyball_image2.jpg" alt="Volleyball Team" />
+      </div>
+
+      <!-- Third image -->
+      <div id="three"> 
+        <img src="volleyball_image3.jpg" alt="Volleyball Net" />
+      </div>
+    </div>
+
+    <!-- Embedded YouTube video -->
+    <div class="embedded-media">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Volleyball Tips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h1>Heading level 1</h1>
+    <p>This store
