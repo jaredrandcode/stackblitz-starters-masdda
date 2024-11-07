@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <title>Volleyball</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <script type="module" src="script.js"></script>
   <link rel="icon" href="/images/favicon.ico">
-  <style>
+
+  <!-- <style>
     /* Flexbox styling for image alignment */
     .HomePageStyle {
       display: flex;
@@ -18,7 +21,9 @@
     }
 
     /* Styling for individual div containers */
-    #one, #two, #three {
+    #one,
+    #two,
+    #three {
       padding: 10px;
       border: 2px solid #ccc;
       border-radius: 15px;
@@ -37,8 +42,12 @@
     a img {
       border: 2px solid #000;
     }
-  </style>
+  </style> -->
+  <script src="https://kit.fontawesome.com/18326123a5.js" crossorigin="anonymous"></script>
+
+
 </head>
+
 <body>
   <nav>
     <a href="/" aria-current="page">Home</a>
@@ -46,34 +55,27 @@
   </nav>
 
   <main>
-    <h1>Home page</h1>
+    <div class="homepagecontent">
+      <div class="buttons">
+        <div class="dropdown">
+          <div class="button" id="accountButton"> 
+          <i class="fa-solid fa-user"></i>
+        </div>
 
-    <div class="HomePageStyle"> 
-      <!-- First image with link -->
-      <div id="one">
-        <a href="https://www.volleyball.com" target="_blank">
-          <img src="volleyball_image1.jpg" alt="Volleyball Game" />
-        </a>
+        <div class="dropdown-content">
+          <div>account settings</div>
+        </div>
+      </div>
+        
+
+        <div class="button">sign up </div>
+        <div class="button"> sign in</div>
+      </div>
+      <div class="title1"> store name
       </div>
 
-      <!-- Second image -->
-      <div id="two"> 
-        <img src="volleyball_image2.jpg" alt="Volleyball Team" />
-      </div>
-
-      <!-- Third image -->
-      <div id="three"> 
-        <img src="volleyball_image3.jpg" alt="Volleyball Net" />
-      </div>
     </div>
+  </main>
+</body>
 
-    <!-- Embedded YouTube video -->
-    <div class="embedded-media">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-        title="Volleyball Tips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <h1>Heading level 1</h1>
-    <p>This store
+</html>
