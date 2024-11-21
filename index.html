@@ -58,15 +58,15 @@
     <div class="homepagecontent">
       <div class="buttons">
         <div class="dropdown">
-          <div class="button" id="accountButton"> 
-          <i class="fa-solid fa-user"></i>
+          <div class="button" id="accountButton">
+            <i class="fa-solid fa-user"></i>
+          </div>
+
+          <div class="dropdown-content">
+            <div>account settings</div>
+          </div>
         </div>
 
-        <div class="dropdown-content">
-          <div>account settings</div>
-        </div>
-      </div>
-        
 
         <div class="button">sign up </div>
         <div class="button"> sign in</div>
@@ -74,8 +74,44 @@
       <div class="title1"> store name
       </div>
 
-    </div>
-  </main>
+</html>
+<table Id="table">
+  <thead>
+    <tr>
+      <td><b>Name</b></td>
+      <td><b>Food</b></td>
+      <td><b>Stars</b></td>
+    </tr>
+  </thead>
+
+  <body>
+    <tr>
+      <td>Dumpling house</td>
+      <td>Chinese</td>
+      <td>5</td>
+    </tr>
+  </body>
+</table>
+<div> Select
+  <select id="types">
+  </select>
+<script>
+  const foodtypes = ["all", "chinese", "italian", "indian"];
+  const select =document.getElementById("types")
+  foodtypes.forEach(
+    (food) => {
+      option = document.createElement("option")
+      option.value = food; 
+      option.text = food; 
+      select.appendChild(option)
+    }
+  )
+</script>
+
+
+
+</div>
+</main>
 </body>
 
 </html>
