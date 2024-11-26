@@ -107,8 +107,25 @@
     }
   )
 </script>
+<script>
+  const row =[{
+    name:"dumpling",
+    food:"Chinese",
+    stars:"5",
 
+  }, {
+    
+  }]
+  const writeTableRow =(table,resturant)=> {
+    const newRow = table.insertRow();
 
+    newRow.innerHTML = `<tr id=${resturant.name}>
+<td>${resturant.name}</td>
+<td>${resturant.type}</td>
+<td>${resturant.stars}</td>
+</tr>`;
+  }
+  </script>
 
 </div>
 </main>
